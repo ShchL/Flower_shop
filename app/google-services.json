@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "500165440472",
+    "project_id": "kursovaya-flowers",
+    "storage_bucket": "kursovaya-flowers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500165440472:android:5c2571ab681b138048f8ad",
+        "android_client_info": {
+          "package_name": "it.mirea.kursovayaflowers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500165440472-s41t0smlaelbo7qcjkffkp7plshp1vp3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.mirea.kursovayaflowers",
+            "certificate_hash": "242f3b87c4a97bf62e5ee520b46810e7089db115"
+          }
+        },
+        {
+          "client_id": "500165440472-13207u52s8uur0ap5t01165vc1aihpgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGcNLV2jd5mr6rAxqYdByxdpnsdCeR8kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500165440472-13207u52s8uur0ap5t01165vc1aihpgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bbc8ba"
+    tools:context=".BusketFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/spaghetti"
+        android:text=" p l a n t s'\n  p l a n e t "
+        android:textColor="#384331"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="35dp"
+        android:fontFamily="@font/spaghetti"
+        android:text="Корзина"
+        android:textAlignment="textEnd"
+        android:textColor="#384331"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/fikus">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/f_lyrata" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/spaghetti"
+        android:text="Фикус лирата"
+        android:textAlignment="center"
+        android:textColor="#384331"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="2205 р."
+        android:textAlignment="center"
+        android:textColor="#384331"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnBusket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-300dp"
+        android:background="@drawable/btn_sign_in"
+        android:text="Оформить заказ"
+        android:textColor="#384331"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#AD8665" />
+
+
+</FrameLayout>
