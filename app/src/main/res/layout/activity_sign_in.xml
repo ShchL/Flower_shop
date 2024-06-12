@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:id="@+id/root_element1"
-    tools:context=".SignInActivity">
+    tools:context=".View.SignInActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:orientation="vertical">
@@ -19,12 +19,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="47dp"
-            android:text="p l a n t s'\n  p l a n e t "
-            android:fontFamily="@font/spaghetti"
+            android:layout_marginTop="50dp"
+            android:text="Лира"
+            android:fontFamily="@font/lena"
+            android:textStyle="bold"
             android:textAlignment="center"
-            android:textColor="#384331"
-            android:textSize="55sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="120sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="цветочная мастерская"
+            android:fontFamily="@font/lena"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp" />
     </LinearLayout>
 
     <TextView
@@ -127,7 +137,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
-            android:background="@drawable/btn_register"
+            android:background="@drawable/btn_input"
             android:drawableRight="@drawable/img_1"
             android:text="Войти с помощью"
             android:textColor="#DADDE2"

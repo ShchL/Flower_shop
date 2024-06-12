@@ -3,211 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#bbc8ba"
-    tools:context=".CatalogFragment">
+    android:background="#6c7e71"
+    tools:context=".View.CatalogFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/spaghetti"
-        android:text=" p l a n t s'\n  p l a n e t "
-        android:textColor="#384331"
-        android:textSize="17sp"
-        android:textStyle="bold" />
+        android:src="@drawable/lira" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginRight="35dp"
-        android:fontFamily="@font/spaghetti"
         android:text="Каталог"
         android:textAlignment="textEnd"
         android:textColor="#384331"
         android:textSize="40sp"
         android:textStyle="bold" />
-    <ScrollView
-        android:layout_marginTop="100dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-
-            <ImageView
-                android:id="@+id/f_lyrata"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/f_lyrata" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/spaghetti"
-                android:text="Фикус лирата"
-                android:textAlignment="center"
-                android:textColor="#384331"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="2205 р."
-                android:textAlignment="center"
-                android:textColor="#384331"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/f_elastica" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/spaghetti"
-                android:text="Фикус эластика"
-                android:textAlignment="center"
-                android:textColor="#384331"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="4200 р."
-                android:textAlignment="center"
-                android:textColor="#384331"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/f_benjamin" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/spaghetti"
-                android:text="Фикус Бенджамина"
-                android:textAlignment="center"
-                android:textColor="#384331"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="1000 р."
-                android:textAlignment="center"
-                android:textColor="#384331"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/f_krassula" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/spaghetti"
-                android:text="Красссула"
-                android:textAlignment="center"
-                android:textColor="#384331"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="800 р."
-                android:textAlignment="center"
-                android:textColor="#384331"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/f_eheveria" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/spaghetti"
-                android:text="Эхеверия"
-                android:textAlignment="center"
-                android:textColor="#384331"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="200 р."
-                android:textAlignment="center"
-                android:textColor="#384331"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/f_pot" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Кашпо - диаметр 13.5, высота 13 см"
-                android:textAlignment="center"
-                android:textColor="#384331"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="1000 р."
-                android:textAlignment="center"
-                android:textColor="#384331"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"/>
 
 </FrameLayout>

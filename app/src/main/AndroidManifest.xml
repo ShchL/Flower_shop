@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="it.mirea.kursovayaflowers">
     <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/img"
@@ -11,13 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KursovayaFlowers">
         <activity
-            android:name=".MainActivity"
+            android:name=".View.MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".View.RegistrationActivity"
             android:exported="false" />
         <activity
-            android:name=".RegistrationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SignInActivity"
+            android:name=".View.SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,10 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
 </manifest>

@@ -5,25 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".AccountFragment">
+    tools:context=".View.AccountFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/spaghetti"
-        android:text=" p l a n t s'\n  p l a n e t "
-        android:textColor="#384331"
-        android:textSize="17sp"
-        android:textStyle="bold" />
+        android:src="@drawable/lira" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginRight="20dp"
-        android:fontFamily="@font/spaghetti"
         android:text="Личный       \nкабинет"
         android:textAlignment="textEnd"
         android:textColor="#384331"

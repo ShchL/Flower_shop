@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6c7e71"
+    tools:context=".View.DeliveryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/lira" />
+
+        <TextView
+        android:id="@+id/text_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="35dp"
+        android:text="Доставка"
+        android:textAlignment="textEnd"
+        android:textColor="#384331"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_layout"
+        style="@style/flower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textColorHint="#384331"
+        app:layout_constraintTop_toBottomOf="@id/text_delivery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_input"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:hint="Дата и время"
+            android:inputType="date|time"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#384331"
+            android:textSize="25sp"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/place_layout"
+        style="@style/flower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textColorHint="#384331"
+        app:layout_constraintTop_toBottomOf="@id/date_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_input"
+            android:drawableLeft="@drawable/ic_location"
+            android:hint="Место"
+            android:minHeight="64dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#384331"
+            android:textSize="25sp"
+            android:paddingStart="16dp"
+            android:drawablePadding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/hint_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hint_del"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/place_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:textSize="17sp"
+        android:ems="18"
+        android:textColor="#384331"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hint_delivery" />
+
+    <TextView
+        android:id="@+id/full_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textSize="17sp"
+        android:ems="18"
+        android:textColor="#384331"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/items" />
+
+    <Button android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_sign_in"
+        android:text="Оплатить заказ"
+        android:textColor="#384331"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#AD8665"
+        app:layout_constraintTop_toBottomOf="@id/full_price"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

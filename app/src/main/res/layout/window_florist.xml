@@ -7,28 +7,17 @@
     android:elevation="10dp"
     app:cardBackgroundColor="#CCAD8665">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+       >
 
         <EditText
-            android:id="@+id/code_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="id товара"
-            android:inputType="number"
-            android:text=""
-            android:textColor="#384331"
-            android:textColorHint="#384331"
-            android:textSize="20sp"/>
-        <EditText
             android:id="@+id/product_name_field"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Товар"
+            android:hint="Название товара"
             android:inputType="text"
             android:text=""
             android:textColor="#384331"
@@ -36,7 +25,7 @@
             android:textSize="20sp"/>
         <EditText
             android:id="@+id/price_field"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Цена"
@@ -44,8 +33,26 @@
             android:text=""
             android:textColor="#384331"
             android:textColorHint="#384331"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:layout_below="@+id/product_name_field"/>
+
+        <ImageView
+            android:id="@+id/image_add_photo"
+            android:layout_width="104dp"
+            android:layout_height="84dp"
+            android:layout_toRightOf="@+id/product_name_field"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:srcCompat="@drawable/ic_add_photo" />
 
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/ivPicture"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_below="@+id/price_field"
+            />
+
+    </RelativeLayout>
 </android.support.v7.widget.CardView>

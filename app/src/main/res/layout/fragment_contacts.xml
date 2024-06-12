@@ -3,58 +3,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#bbc8ba"
-    tools:context=".ContactsFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#6c7e71"
+    tools:context=".View.ContactsFragment">
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/lira" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:fontFamily="@font/spaghetti"
+        android:layout_marginRight="35dp"
         android:text="Контакты"
-        android:textAlignment="center"
+        android:textAlignment="textEnd"
         android:textColor="#384331"
         android:textSize="40sp"
         android:textStyle="bold" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical">
+        android:layout_gravity="center">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="81dp"
-            android:src="@drawable/ic_phone" />
+            android:id="@+id/phone_ic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_phone_white" />
 
         <TextView
             android:id="@+id/contacts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="+74957907711"
+            android:layout_marginTop="10dp"
+            android:text="+79013356525"
             android:textAlignment="center"
-            android:textColor="#384331"
-            android:textSize="40sp"
-            android:textStyle="bold" />
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/phone_ic"            />
 
         <ImageView
-            android:layout_marginTop="80dp"
-            android:layout_width="match_parent"
-            android:layout_height="81dp"
-            android:src="@drawable/ic_email" />
+            android:id="@+id/loc_ic"
+            android:layout_marginTop="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_location_white"
+            android:layout_below="@id/phone_ic"/>
 
         <TextView
-            android:id="@+id/email"
+            android:id="@+id/address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="plantsplanet@support.ru"
+            android:layout_marginTop="70dp"
+            android:text="Московская область, Раменское, Дергаевская улица, 36"
             android:textAlignment="center"
-            android:textColor="#384331"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/loc_ic"
+            android:layout_below="@id/contacts"/>
 
+        <Button
+            android:id="@+id/btnRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_sign_in"
+            android:drawableLeft="@drawable/ic_map"
+            android:text="Как доехать"
+            android:textColor="#384331"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#AD8665"
+            android:layout_marginTop="70dp"
+            android:layout_below="@id/address"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
 </FrameLayout>

@@ -6,18 +6,15 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:id="@+id/root_element2"
-    tools:context=".RegistrationActivity">
+    tools:context=".View.RegistrationActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/spaghetti"
-        android:text=" p l a n t s'\n  p l a n e t "
-        android:textColor="#384331"
-        android:textSize="17sp"
-        android:textStyle="bold" />
+        android:src="@drawable/lira" />
 
     <TextView
         android:layout_width="match_parent"
@@ -25,7 +22,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="40dp"
         android:layout_marginRight="10dp"
-        android:fontFamily="@font/spaghetti"
         android:text="Регистрация"
         android:textAlignment="textEnd"
         android:textColor="#384331"
